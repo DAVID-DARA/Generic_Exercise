@@ -17,5 +17,18 @@ public class Main
         Test<Triangle> triangleTest = new Test();
         System.out.println("Area of Triangle: "+triangleTest.getArea(triangle));
         System.out.println(triangleTest.getVolume(triangle));
+
+        Test<Circle> circleTest = new Test();
+        System.out.println("Area of Circle: "+circleTest.getArea(circle));
+        System.out.println(circleTest.getVolume(circle));
+
+        Test<Cylinder> cylinderTest = new Test<>();
+        System.out.println("Area of Cylinder: "+cylinderTest.getArea(cylinder));
+        System.out.println("Volume of cylinder: "+cylinderTest.getVolume(cylinder));
+
+        Test<Sphere> sphereTest = new Test();
+        System.out.println("Area of Sphere: "+sphereTest.getArea(sphere));
+        System.out.println("Volume of Sphere: "+sphereTest.getVolume(sphere));
+
     }
 }
