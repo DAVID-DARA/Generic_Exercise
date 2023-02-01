@@ -1,16 +1,23 @@
 package com.Shapes;
 
-class Rectangle extends Shape {
-    private double length;
-    private double width;
+class Rectangle implements Shape {
+    private final String name;
+    private final double length;
+    private final double width;
 
-    Rectangle(double length, double width) {
+    Rectangle(String name, double length,double width) {
+        this.name = name;
         this.length = length;
         this.width = width;
     }
 
     @Override
-    double getArea() {
+    public double getArea() {
         return length * width;
+    }
+
+    @Override
+    public double getVolume() {
+        return 0;
     }
 }

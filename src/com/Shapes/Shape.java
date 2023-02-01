@@ -1,8 +1,8 @@
 package com.Shapes;
 
-abstract class Shape
+public interface Shape
 {
-    private final double PI = 3.142;
+    double getArea();
 
-
+    double getVolume();
 }

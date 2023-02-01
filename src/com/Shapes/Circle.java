@@ -1,14 +1,23 @@
 package com.Shapes;
 
-class Circle extends Shape {
+class Circle implements Shape
+{
+    private String name;
     private double radius;
 
-    Circle(double radius) {
+    Circle(String name, double radius) {
+        this.name = name;
         this.radius = radius;
     }
 
     @Override
-    double getArea() {
+    public double getArea() {
         return Math.PI * radius * radius;
+    }
+
+    @Override
+    public double getVolume()
+    {
+        return 0;
     }
 }
