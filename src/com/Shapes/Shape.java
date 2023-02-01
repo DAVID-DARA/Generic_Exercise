@@ -1,8 +1,8 @@
 package com.Shapes;
 
-abstract class Shape {
-    abstract double getArea();
-    double getVolume() {
-        return Double.NaN;
-    }
+abstract class Shape
+{
+    private final double PI = 3.142;
+
+
 }
